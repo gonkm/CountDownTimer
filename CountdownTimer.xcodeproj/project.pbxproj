@@ -16,6 +16,8 @@
 		D6100E6421FAF220002946B7 /* CountdownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6100E6321FAF220002946B7 /* CountdownTimerTests.swift */; };
 		D6100E6F21FAF4AE002946B7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6100E6E21FAF4AE002946B7 /* ViewController.xib */; };
 		D6100E7121FAF9B1002946B7 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6100E7021FAF9B1002946B7 /* CounterViewModel.swift */; };
+		D6100E7321FE7DA8002946B7 /* CounterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6100E7221FE7DA8002946B7 /* CounterDelegate.swift */; };
+		D6100E7521FE7DFE002946B7 /* CounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6100E7421FE7DFE002946B7 /* CounterPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D6100E6521FAF220002946B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6100E6E21FAF4AE002946B7 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		D6100E7021FAF9B1002946B7 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		D6100E7221FE7DA8002946B7 /* CounterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDelegate.swift; sourceTree = "<group>"; };
+		D6100E7421FE7DFE002946B7 /* CounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterPresenter.swift; sourceTree = "<group>"; };
 		F506A574DCFE061A735CCEB8 /* Pods-CountdownTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimerTests/Pods-CountdownTimerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,8 @@
 				D6100E5521FAF220002946B7 /* Assets.xcassets */,
 				D6100E5721FAF220002946B7 /* LaunchScreen.storyboard */,
 				D6100E5A21FAF220002946B7 /* Info.plist */,
+				D6100E7221FE7DA8002946B7 /* CounterDelegate.swift */,
+				D6100E7421FE7DFE002946B7 /* CounterPresenter.swift */,
 			);
 			path = CountdownTimer;
 			sourceTree = "<group>";
@@ -306,9 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6100E7521FE7DFE002946B7 /* CounterPresenter.swift in Sources */,
 				D6100E5121FAF21D002946B7 /* ViewController.swift in Sources */,
 				D6100E4F21FAF21D002946B7 /* AppDelegate.swift in Sources */,
 				D6100E7121FAF9B1002946B7 /* CounterViewModel.swift in Sources */,
+				D6100E7321FE7DA8002946B7 /* CounterDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,38 +13,48 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
     
-    private var viewModel: CounterViewModel!
+    private let presenter = CounterPresenter()
+//    private var viewModel: CounterViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = CounterViewModel()
+        presenter.attachView(self)
+//        viewModel = CounterViewModel()
     }
     
     
     @IBAction func countUp(_ sender: Any) {
-        viewModel.incrementCount(callback: { [weak self] count in
-            self?.updateCountLabel(count)
-        })
+        presenter.incrementCount()
+//        viewModel.incrementCount(callback: { [weak self] count in
+//            self?.updateCountLabel(count)
+//        })
     }
     
     
     @IBAction func countDown(_ sender: Any) {
-        viewModel.decrementCount(callback: { [weak self] count in
-            self?.updateCountLabel(count)
-        })
+        presenter.decrementCount()
+//        viewModel.decrementCount(callback: { [weak self] count in
+//            self?.updateCountLabel(count)
+//        })
     }
     
     
     @IBAction func countReset(_ sender: Any) {
-        viewModel.resetCount(callback: { [weak self] count in
-            self?.updateCountLabel(count)
-        })
+        presenter.resetCount()
+//        viewModel.resetCount(callback: { [weak self] count in
+//            self?.updateCountLabel(count)
+//        })
     }
         
-    private func updateCountLabel(_ count: Int){
+//    private func updateCountLabel(_ count: Int){
+//        countLabel.text = String(count)
+//    }
+
+}
+
+extension ViewController: CounterDelegate {
+    func updateCount(count: Int) {
         countLabel.text = String(count)
     }
-    
-
 }
 
