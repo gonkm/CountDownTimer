@@ -12,7 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="CountdownTimer" customModuleProvider="target">
             <connections>
+                <outlet property="countDownButton" destination="Vof-F3-asG" id="uFG-0J-ceS"/>
                 <outlet property="countLabel" destination="UkM-rp-eel" id="HrC-ao-yfl"/>
+                <outlet property="countResetButton" destination="6Wl-o3-71O" id="gQV-8F-ned"/>
+                <outlet property="countUpButton" destination="oa7-UU-50E" id="ohp-k0-Y6K"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ZAF-d2-hAe"/>
             </connections>
         </placeholder>
@@ -25,28 +28,19 @@
                     <rect key="frame" x="133" y="363" width="108" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="カウントアップ"/>
-                    <connections>
-                        <action selector="countUp:" destination="-1" eventType="touchUpInside" id="pfy-Jc-NeX"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-F3-asG">
                     <rect key="frame" x="133" y="401" width="108" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="カウントダウン"/>
-                    <connections>
-                        <action selector="countDown:" destination="-1" eventType="touchUpInside" id="ANx-cf-MxV"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wl-o3-71O">
                     <rect key="frame" x="156" y="439" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="リセット"/>
-                    <connections>
-                        <action selector="countReset:" destination="-1" eventType="touchUpInside" id="0cb-9x-uFn"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkM-rp-eel">
-                    <rect key="frame" x="166" y="263" width="42" height="21"/>
+                    <rect key="frame" x="125" y="268" width="125" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -55,6 +49,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="128.18590704647679"/>
         </view>
     </objects>
 </document>
